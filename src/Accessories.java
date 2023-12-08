@@ -172,6 +172,6 @@ public interface Accessories {
             return n1;
         }
         /** God ring random increase stat 3 cases
-         *  return case value 1 or 2 or 3 cases;
+         *  return case value 1 or 2 or 3 cases
          */
 }

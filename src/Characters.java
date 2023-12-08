@@ -592,7 +592,7 @@ class Mage extends RPGCharacter implements Magician {
      */
 }
 
-abstract class Soldier extends RPGCharacter implements Warriror {
+class Soldier extends RPGCharacter implements Warriror {
     public Soldier(String name,int level,double movespeed) {
         super(name,level,movespeed);
         this.setHp(100 + (3 * this.getLevel()));
@@ -639,10 +639,6 @@ abstract class Soldier extends RPGCharacter implements Warriror {
         this.setDamage(getBasedamage() * (1+0.05*getLevel()));
         super.levelUp();
     }
-
-    public abstract void MagicBlade();
-
-    public abstract void fireball(RPGCharacter target);
 }
 
 class Ghost {
@@ -809,7 +805,6 @@ class Samurai extends Soldier implements Samurai_0 {
             System.out.println(this.getName() + " can't use skill");
         }
     }
-}
     /** skill highDamage_attack
      * effect: this character use Getsuga Tenshō 1ﾒ printed
      * effect: boot skillDamage form damaged attack
@@ -818,3 +813,4 @@ class Samurai extends Soldier implements Samurai_0 {
      * effect: this character can't use skill printed
      *      if  this character hp is not enough to use skill
      */
+}
